@@ -1,0 +1,61 @@
+.logo{
+    width:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width:70px;
+    /* /* border: 1px solid black; */
+    /* border-radius: 50px;  */
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    background-color: black;
+    /* color: blueviolet; */
+}
+.navlist{
+    width: 70%;
+    display:flex;
+    align-items: center;
+    
+    
+}
+
+.navlist li{
+    list-style: none;
+    padding: 23px 36px; 
+    
+}
+
+.navlist li a{
+    color: white;
+}
+
+/* .navlist li a:hover{
+    text-decoration: none;
+    /* color: Chartreuse ; */
+    /* font-size: 20px; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+/* }  */
+
+.rightnav
+{
+    
+    text-align: right;
+    width:50%;
+    padding: 0 23px;
+}
+
+#Search{
+    padding: 5px;
+    font-style: 17px;
+    border: 2px;
+    border-radius: 9px;
+    border: 2px solid black;
+}
