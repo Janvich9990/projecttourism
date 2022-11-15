@@ -36,17 +36,6 @@ body{
 
 }
 
-.container:hover .box {
-    transform: rotateY(25deg);
-  }
-  .container .box:hover ~ .box {
-    transform: rotateY(-25deg);
-  }
-  .container .box:hover {
-    transform: rotateY(0deg) scale(1.25);
-    z-index: 1;
-    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
-  }
   .container .box .imgBx {
     position: absolute;
     top: 0;
