@@ -1,17 +1,18 @@
-
 <html lang="en">
 <head>
-  <title>Gujarat Toursim</title>
+  <title >Gujarat Explorer</title>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Logo-1.png" type="icon type">
+  <link rel="stylesheet" href="navbar.css">
+  <title>The Gujarat Explorer</title>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <head>
+  </head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="Image/Logo-1.png" type="image/x-icon">
-
+   
+<!-- for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
 
@@ -23,7 +24,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Image/guj.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("guj.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,49 +41,150 @@ body, html {
   color: white;
 }
 
-/*  */
+.footer {
+  background: black;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer p {
+  color: #8a8a8a;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+
+
+.footer-col-1 {
+  margin: 10px;
+ 
+}
+
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+  position: right;
+  right: 100px;
+  position: absolute;
+  
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: left;
+}
+
+
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+  text-align: right;
+ 
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.app-logo {
+  margin-top: -180px;
+}
+.app-logo img {
+  width: 140px;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  
+  
+}
+
+<!--icons-->
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: white;
+  color: black;
+  height: 100px;
+  width: 100px;
+  border-radius:10px;
+}
+
+.fa-twitter {
+  background: white;
+  color: black;
+}
+
+.fa-instagram {
+  background: white;
+  color: black;
+}
+
+
 
 </style>
+<script defer="navbar.js"></script>
 </head>
 
+
+
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    
-    <div class="navbar-header">
-      
-      
-      <img style="margin-right:10px" src="Image/logo-1.png" alt="Gujarat Toursim" height="50px" width="50px">
-    </div>
-    <a class="navbar-brand" href="#">Gujrat Toursim</a>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-	  <li><a href="file:///Z:/project/Loginreg.html">LOGIN</A></LI>
-      <li><a href="#">Tour packages</a></li>
-      <li><a href="#">Hotel Booking</a></li>
- <li><a href="#">Tour guide</a></li>
- <li><a href="feedback.html">Feedback</a></li>
- 
+<header id="header"></header>
+  <!-- Navbar -->
+  <nav class="navbar background">
+    <ul class="navlist">
+        <div class="logo"><img src="Logo-1.png"  alt="logo"></div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="regformig.html">Login</a></li>
+        <li><a href="TourPackages">Tour-Packages</a></li>
+        <li><a href="#HotelBooking">Hotel-Booking</a></li>
+        <li><a href="feedback2.html">Feedback</a></li>
+        <li><a href="#Tour Guide">About us</a></li>
     </ul>
-    <form class="navbar-form navbar-left" action="/action_page.php">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search" name="search">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-  </div>
-</nav>
-<body>
+    <div class="rightnav">
+        <input type="text"  Id="Search" name="Search">
+        <button class="btn btn-sm">Search</button>
+    </div>
+
+
+</nav> 
+
 <!-- background home page -->
   <div class="hero-image">
     <div class="hero-text">
-      <h1 style="font-size:50px">Gujarat Toursim</h1>
-      <h1>Welcome..</h1> 
+      <h1 style="font-size:50px">Gujarat Explorer</h1>
+      <h1>Welcome</h1> 
       
     </div>
   </div>
@@ -127,7 +229,7 @@ body, html {
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="Image/SOU.jpg" alt="SOU" width="2000px" height="600px">
+        <img src="SOU.jpg" alt="SOU" width="2000px" height="600px">
         <div class="carousel-caption">
           <h3>STATUE OF UNITY</h3>
           <p>Narmada River</p>
@@ -135,7 +237,7 @@ body, html {
       </div>
 
       <div class="item">
-        <img src="Image/Gira.jpg" alt="Gira" width="2000px" height="600px">
+        <img src="Gira.jpg" alt="Gira" width="2000px" height="600px">
         <div class="carousel-caption">
           <h3>SAPUTARA</h3>
  <p>Gira Water Fall</p>
@@ -143,7 +245,7 @@ body, html {
       </div>
    
       <div class="item">
-        <img src="Image/Polo Forest.jpg" alt="Polo" width="2000px" height="600px">
+        <img src="Polo Forest.jpg" alt="Polo" width="2000px" height="600px">
         <div class="carousel-caption">
           <h3>Polo Forest</h3>
  <p>Sabarkatha</p>
@@ -151,7 +253,7 @@ body, html {
       </div>
  
  <div class="item">
-        <img src="Image/m1.jpg" alt="MAndvi" width="2000px" height="600px">
+        <img src="man.jpeg" alt="MAndvi" width="2000px" height="600px">
         <div class="carousel-caption">
           <h3>Mandvi beach</h3>
  <p>kutch</p>
@@ -159,7 +261,7 @@ body, html {
       </div>
  
  <div class="item">
-        <img src="Image/Dwarka.jpg" alt="Dwarka" width="2000px" height="600px">
+        <img src="Dwarka.jpg" alt="Dwarka" width="2000px" height="600px">
         <div class="carousel-caption">
           <h3>Dwarka</h3>
  <p>Dwarka</p>
@@ -218,180 +320,91 @@ border: 1px solid black;
 padding: 50px;
 margin: 20px;" >
 <div style="display: inline-block; padding-left: 8%;padding-right: 5%;">
+  <a href="sun-temple.html">
   <div class="card" style="margin:20px; margin-top: -1px ; display: inline-block;">
-      <!-- <img src="Image/Sun.jpg" alt="Sun Temple" style="width:100%"> -->
-      <a href="file:///Z:/project/suntemple.html"><img src="Image/Sun.jpg" alt="Sun Temple" style="width:100%"></a>
+      <img src="Sun.jpg" alt="Sun Temple" onclick style="width:100%">
       <div class="container">
         <h4><b>Sun Temple</b></h4> 
         <p>Modhera</p> 
       </div>
     </div>
-    
+    </a>
+    <a href="ranikivav.html">
     <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
-        <a href="file:///Z:/project/rani%20ki%20vaav.html"><img src="Image/Rani.jpg" alt="Sun Temple" style="width:100%"></a>
+        <img src="Rani.jpg" alt="Sun Temple" style="width:100%">
         <div class="container">
           <h4><b>Rani ki vav</b></h4> 
           <p>Patan</p> 
         </div>
       </div>
-    
+      </a>
+    <a href="gir.html">
       <div class="card" style="margin: 20px; margin-top: -1px ;  display: inline-block;">
-        <img src="Image/Gir.jpg" alt="Gir" style="width:100%">
+        <img src="Gir.jpg" alt="Gir" style="width:100%">
         <div class="container">
           <h4><b>Sasan Gir</b></h4> 
           <p>gir</p> 
         </div>
       </div>
+      </a>
+      <a href="mahatmamandir.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
-        <img src="Image/mahatma mandir.jpg" alt="Mahatma mandir" style="width:100%">
+        <img src="mahatma mandir.jpg" alt="Mahatma mandir" style="width:100%">
         <div class="container">
           <h4><b>Mahatma Mandir</b></h4> 
           <p>Gandhinagar</p> 
         </div>
       </div>
-    
+      </a>
+      <a href="shivrajpur.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
-        <img src="Image/shivrajpur.jpg" alt="shivrajpur" style="width:100%">
+        <img src="shivrajpur.jpg" alt="shivrajpur" style="width:100%">
         <div class="container">
           <h4><b>Shivrajpur Beach</b></h4> 
           <p>Shivrajpur Beach</p> 
         </div>
       </div>
-    
+    </a>
+    <a href="div.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
-        <img src="Image/Diu.jpg" alt="Diu" style="width:100%">
+        <img src="Diu .jpg" alt="Diu" style="width:100%">
         <div class="container">
           <h4><b>Diu</b></h4> 
           <p>Diu</p> 
         </div>
       </div>
     </div>
+  </a>
 
-    <!-- footer css -->
-    <style>
-      .footer {
-        background: black;
-        color: #8a8a8a;
-        font-size: 14px;
-        padding: 60px 0 20px;
-      }
-      
-      .footer p {
-        color: #8a8a8a;
-      }
-      .footer-col-1,
-      .footer-col-2,
-      .footer-col-3,
-      .footer-col-4 {
-        min-width: 250px;
-        margin-bottom: 20px;
-      }
-      
-      
-      
-      .footer-col-1 {
-        margin: 10px;
-       
-      }
-      
-      .footer-col-2 {
-        flex: 1;
-        text-align: center;
-      }
-      
-      .footer-col-3,
-      .footer-col-4 {
-        flex-basis: 12%;
-        text-align: left;
-      }
-      
-      
-      .footer-col-2 img {
-        width: 180px;
-        margin-bottom: 20px;
-      }
-      
-      
-      ul {
-        list-style-type: none;
-      }
-      
-      .app-logo {
-        margin-top: -180px;
-      }
-      .app-logo img {
-        width: 140px;
-      }
-      
-      .footer hr {
-        border: none;
-        background: #b5b5b5;
-        height: 1px;
-        margin: 20px 0;
-      }
-      
-      .copyright {
-        text-align: center;
-        
-        
-      }
-      
-      <!--icons-->
-      .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        border-radius: 50px;
-        height: 100px;
-        width: 100px;
-      }
-      
-      .fa:hover {
-          opacity: 0.7;
-      }
-      
-      .fa-facebook {
-        background: white;
-        color: black;
-        height: 100px;
-        width: 100px;
-        border-radius:10px;
-      }
-      
-      .fa-twitter {
-        background: white;
-        color: black;
-      }
-      
-      .fa-instagram {
-        background: white;
-        color: black;
-      }
-      
-      </style>
-    <!-- footer -->
-    body>
+
+    <!-- Footer -->
+
     <div class="footer">
-              <hr>
-          <div class="footer-col-1">
-                      <h3>Contact us:+91 84 60973837</h3>
-              <h3>Email : gujarattourism518@gmail.com</h3>
-                     <img src="Image/fa.png"alt="" />
-                        <img src="Image/twitter.png" alt="" />
-              <img src="Image/insta.png" alt=""/>
-                      <div class="app-logo">
-                        
-                      </div>
-                    </div>
-                    <div class="footer-col-2">
-                      <img src="Image/logo-1.png" alt="" />
-                    </div>
-                 <p class="copyright">Copyright &copy; Gujarat Tourism</p>
-                    
-                </div>
+      <hr>
+  <div class="footer-col-1" style="background-color:black;">
+              <h3>Contact us:+91 84 60973837</h3>
+      <h3>Email : gujaratexplorer518@gmail.com</h3>
+            <a href="https://www.facebook.com/">
+             <img src="fa.png"alt="" />
+             </a>
+             <a href="https://www.twitter.com/">
+                <img src="twitter.png" alt="" />
+                </a>
+                <a href="https://www.instagram.com/">
+      <img src="insta.png" alt=""/>
+      </a>
+              <div class="app-logo">
+                
               </div>
+            </div>
+            <div class="footer-col-2" >
+              <img src="Logo-1.png" alt=""/>
+            </div>
+            <br><br><br><br><br><br><br>
+         <p class="copyright">Copyright &copy; Gujarat Explorer</p>
+            
+        </div>
+      </div>
+
 </body>
 </html>
