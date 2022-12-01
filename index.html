@@ -1,18 +1,16 @@
 <html lang="en">
 <head>
-  <title>Gujarat Explorer</title>
+  <title >Gujarat Explorer</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="gujaratexp.png" type="icon type">
   <link rel="stylesheet" href="navbar.css">
   <title>The Gujarat Explorer</title>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  
   </head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="icon" href="logo.png" type="image/x-icon"> -->
+   
 <!-- for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -20,6 +18,7 @@
 
 /* background image home page */
 body, html {
+  user-select: none;
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -166,17 +165,20 @@ ul {
   <!-- Navbar -->
   <nav class="navbar background">
     <ul class="navlist">
-        <div class="logo"><img src="logo.png"  alt="logo"></div>
+        <div class="logo"><img src="gujaratexp.png"  alt="logo"></div>
         <li><a href="#home">Home</a></li>
         <li><a href="regformig.html">Login</a></li>
-        <li><a href="TourPackages">Tour-Packages</a></li>
+        <li><a href="file:///E:/C_programs/html/project/css/tour.html">Tour-Packages</a></li>
         <li><a href="#HotelBooking">Hotel-Booking</a></li>
         <li><a href="feedback2.html">Feedback</a></li>
-        <li><a href="#Tour Guide">About us</a></li>
+        <li><a href="file:///E:/C_programs/html/project/css/about%20us.html">About us</a></li>
     </ul>
     <div class="rightnav">
-        <input type="text"  Id="Search" name="Search">
-        <button class="btn btn-sm">Search</button>
+      <a href="http://localhost/pro/">
+        <button class="btn btn-sm" style="text-align: end; padding-right: 5px;" >Signup</button>
+        </a>
+       <a href="https://www.google.com/"></a><input type="text"  Id="Search" name="Search">
+        <button class="btn btn-sm" onclick="window.location.href='https://www.google.com/';">Search</button>
     </div>
 
 
@@ -322,6 +324,7 @@ border: 1px solid black;
 padding: 50px;
 margin: 20px;" >
 <div style="display: inline-block; padding-left: 8%;padding-right: 5%;">
+  <a href="sun-temple.html">
   <div class="card" style="margin:20px; margin-top: -1px ; display: inline-block;">
       <img src="Sun.jpg" alt="Sun Temple" onclick style="width:100%">
       <div class="container">
@@ -329,7 +332,8 @@ margin: 20px;" >
         <p>Modhera</p> 
       </div>
     </div>
-    
+    </a>
+    <a href="ranikivav.html">
     <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
         <img src="Rani.jpg" alt="Sun Temple" style="width:100%">
         <div class="container">
@@ -337,7 +341,8 @@ margin: 20px;" >
           <p>Patan</p> 
         </div>
       </div>
-    
+      </a>
+    <a href="gir.html">
       <div class="card" style="margin: 20px; margin-top: -1px ;  display: inline-block;">
         <img src="Gir.jpg" alt="Gir" style="width:100%">
         <div class="container">
@@ -345,6 +350,8 @@ margin: 20px;" >
           <p>gir</p> 
         </div>
       </div>
+      </a>
+      <a href="mahatmamandir.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
         <img src="mahatma mandir.jpg" alt="Mahatma mandir" style="width:100%">
         <div class="container">
@@ -352,7 +359,8 @@ margin: 20px;" >
           <p>Gandhinagar</p> 
         </div>
       </div>
-    
+      </a>
+      <a href="shivrajpur.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
         <img src="shivrajpur.jpg" alt="shivrajpur" style="width:100%">
         <div class="container">
@@ -360,7 +368,8 @@ margin: 20px;" >
           <p>Shivrajpur Beach</p> 
         </div>
       </div>
-    
+    </a>
+    <a href="div.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
         <img src="Diu .jpg" alt="Diu" style="width:100%">
         <div class="container">
@@ -369,6 +378,7 @@ margin: 20px;" >
         </div>
       </div>
     </div>
+  </a>
 
 
     <!-- Footer -->
@@ -392,7 +402,7 @@ margin: 20px;" >
               </div>
             </div>
             <div class="footer-col-2" >
-              <img src="logo.png" alt=""/>
+              <img src="gujaratexp.png" alt=""/>
             </div>
             <br><br><br><br><br><br><br>
          <p class="copyright">Copyright &copy; Gujarat Explorer</p>
