@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+    margin: 0px;
+    padding: 40px 0px;
+    background-image: linear-gradient(rgba(0, 106, 155, 0.781), rgba(0, 100, 42, 0.726)), url("https://img.freepik.com/free-photo/couple-tourists-with-backpacks-mountain_1150-7520.jpg?w=740&t=st=1654177889~exp=1654178489~hmac=885818a048953afbe3668c76b49ed1ec9f94444a44dfeac5c38adb7afed1adc9");
+    backdrop-filter: blur(5px) brightness(70%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: auto;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+div label {
+    color: #27428c;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+section, .date{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+select, input{
+    height: 35px;
+    padding-left: 2px;
+    font-size: 18px;
+}
+
+.passengers {
+    flex-direction: row;
+}
+
+.passengers section{
+    flex: 1;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    flex: 1;
+}
+
+span label {
+    color: #27428c;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.identity section:last-of-type section{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background-color: #00acee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+        </style>
+    </head>
+
+<body>
+    <h1>Where Are You Heading?</h1>
+
+    <form>
+      <div class="from-to">
+        <section>
+          <label for="depart">Départ</label>
+          <select name="from" id="depart" required>
+            <option value="City 1">City 1</option>
+            <option value="City 2">City 2</option>
+            <option value="City 3">City 3</option>
+            <option value="City 4">City 4</option>
+            <option value="City 5">City 5</option>
+            <option value="City 6">City 6</option>
+            <option value="City 7">City 7</option>
+            <option value="City 8">City 8</option>
+            <option value="City 9">City 9</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="l_name">Destination</label>
+          <select name="to" id="destination" required>
+            <option value="City 1">City 1</option>
+            <option value="City 2" selected>City 2</option>
+            <option value="City 3">City 3</option>
+            <option value="City 4">City 4</option>
+            <option value="City 5">City 5</option>
+            <option value="City 6">City 6</option>
+            <option value="City 7">City 7</option>
+            <option value="City 8">City 8</option>
+            <option value="City 9">City 9</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="date" id="time">
+        <label for="time">Date de départ</label>
+        <input type="date" required />
+      </div>
+
+      <div class="passengers">
+        <section>
+          <label for="adults">Adultes</label>
+          <input
+            type="number"
+            id="adults"
+            name="Adults"
+            min="1"
+            max="10"
+            value="1"
+            required
+          />
+        </section>
+
+        <section>
+          <label for="childs">Enfants</label>
+          <input
+            type="number"
+            id="childs"
+            name="Childs"
+            min="0"
+            max="10"
+            value="0"
+          />
+        </section>
+
+        <section>
+          <label for="babies">Bébés</label>
+          <input
+            type="number"
+            id="babies"
+            name="Babies"
+            min="0"
+            max="10"
+            value="0"
+          />
+        </section>
+      </div>
+
+      <div class="info">
+        <section>
+          <label for="mail">Adresse Mail</label>
+          <input type="email" name="email" id="mail" required />
+        </section>
+        <section>
+          <label for="phone">Numéro de téléphone</label>
+          <input type="tel" name="Phone" id="phone" minlength="10" required />
+        </section>
+      </div>
+
+      <div class="identity">
+        <section>
+          <label for="identity">National Id</label>
+          <input type="text" id="identity" name="National Id" required />
+        </section>
+        <section>
+          <label for="rad">Piéce d'identity</label>
+          <section>
+            <span>
+              <input type="radio" name="peice" value="CIN" id="cin" checked />
+              <label for="cin">CIN</label>
+            </span>
+
+            <span>
+              <input type="radio" name="peice" value="Passport" id="pass" />
+              <label for="pass">Passport</label>
+            </span>
+
+            <span>
+              <input
+                type="radio"
+                name="peice"
+                value="drive licence"
+                id="drive"
+              />
+              <label for="drive">Drive licence</label>
+            </span>
+          </section>
+        </section>
+      </div>
+
+      <input type="submit" />
+    </form>
+</body>
+
