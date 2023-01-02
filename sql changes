@@ -8,3 +8,11 @@ DROP COLUMN weather;
 
 ALTER TABLE signin
 ADD FOREIGN KEY (cust_id) REFERENCES customer(cust_id);
+
+create table category(
+category_id int(6),
+place_cat_id int(6),
+cat_name varchar(20),
+c_description varchar(25),
+ PRIMARY KEY (category_id)
+);
