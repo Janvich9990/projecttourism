@@ -1,0 +1,10 @@
+use tourism;
+
+ALTER TABLE hotel
+ADD FOREIGN KEY (place_id) REFERENCES place(place_id);
+
+ALTER TABLE place
+DROP COLUMN weather;
+
+ALTER TABLE signin
+ADD FOREIGN KEY (cust_id) REFERENCES customer(cust_id);
