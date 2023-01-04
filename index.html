@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="gujaratexp.png" type="icon type">
-  <link rel="stylesheet" href="navbar.css">
+  <link rel="icon" href="E:\project\images\gujaratexp.png" type="icon type">
+  <link rel="stylesheet" href="E:\project\css\navbar.css">
+  <!-- <link rel="stylesheet" href="search.js">
+  <link rel="stylesheet" href="search.css"> -->
   <title>The Gujarat Explorer</title>
   
   </head>
@@ -14,7 +16,7 @@
 <!-- for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
+  
 
 /* background image home page */
 body, html {
@@ -25,7 +27,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("guj.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/guj.jpeg');
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -153,9 +155,7 @@ ul {
 
 
 </style>
-<script defer="navbar.js"></script>
 </head>
-
 
 
 
@@ -165,23 +165,28 @@ ul {
   <!-- Navbar -->
   <nav class="navbar background">
     <ul class="navlist">
-        <div class="logo"><img src="gujaratexp.png"  alt="logo"></div>
+        <div class="logo"><img src="E:\project\images\gujaratexp.png"  alt="logo"></div>
         <li><a href="#home">Home</a></li>
-        <li><a href="regformig.html">Login</a></li>
-        <li><a href="file:///E:/C_programs/html/project/css/tour.html">Tour-Packages</a></li>
-        <li><a href="#HotelBooking">Hotel-Booking</a></li>
-        <li><a href="feedback2.html">Feedback</a></li>
-        <li><a href="file:///E:/C_programs/html/project/css/about%20us.html">About us</a></li>
+        <li><a href="E:\project\homepage\ahmd.html">1Day-Places</a></li>
+        <li><a href="E:\project\homepage\bookpack.html">Tour-Packages</a></li>
+        <li><a href="E:\project\homepage\formhotel.html">Hotel-Booking</a></li>
+        <li><a href="E:\project\homepage\feedback2.html">Feedback</a></li>
+        <li><a href="E:\project\homepage\aboutus.html">About us</a></li>
     </ul>
     <div class="rightnav">
-      <a href="http://localhost/pro/">
+      <a href="E:\project\homepage\regformig.html ">
+        <button class="btn btn-sm" style="text-align: end; padding-right: 5px;" >Signin</button>
+        </a> 
+      <a href="http://localhost/tour/">
         <button class="btn btn-sm" style="text-align: end; padding-right: 5px;" >Signup</button>
+        </a> 
+        <a href="E:\project\homepage\search.html">
+        <img src="E:\project\images\src.png" height="50px" style="padding:10px ">
         </a>
-       <a href="https://www.google.com/"></a><input type="text"  Id="Search" name="Search">
-        <button class="btn btn-sm" onclick="window.location.href='https://www.google.com/';">Search</button>
-    </div>
+          
+      </div>
 
-
+      
 </nav> 
 
 <!-- background home page -->
@@ -233,15 +238,17 @@ ul {
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="SOU.jpg" alt="SOU" width="2000px" height="600px">
+         <a href="file:///E:/project/cards/sou.html" target="_blank">
+        <img src="E:\project\images\SOU.jpg" alt="SOU" width="2000px" height="600px"></a>
         <div class="carousel-caption">
           <h3>STATUE OF UNITY</h3>
           <p>Narmada River</p>
         </div>
       </div>
-
+ 
       <div class="item">
-        <img src="Gira.jpg" alt="Gira" width="2000px" height="600px">
+        <a href="../cards/saputara.html" target="_blank">
+        <img src="E:\project\images\Gira.jpg" alt="Gira" width="2000px" height="600px"></a>
         <div class="carousel-caption">
           <h3>SAPUTARA</h3>
  <p>Gira Water Fall</p>
@@ -249,7 +256,8 @@ ul {
       </div>
    
       <div class="item">
-        <img src="Polo Forest.jpg" alt="Polo" width="2000px" height="600px">
+        <a href="../cards/poloforest.html " target="_blank">
+        <img src="E:\project\images\Polo Forest.jpg" alt="Polo" width="2000px" height="600px"></a>
         <div class="carousel-caption">
           <h3>Polo Forest</h3>
  <p>Sabarkatha</p>
@@ -257,7 +265,8 @@ ul {
       </div>
  
  <div class="item">
-        <img src="man.jpeg" alt="MAndvi" width="2000px" height="600px">
+  <a href="../cards/mandvi.html " target="_blank">
+        <img src="E:\project\images\man.jpeg" alt="MAndvi" width="2000px" height="600px"></a>
         <div class="carousel-caption">
           <h3>Mandvi beach</h3>
  <p>kutch</p>
@@ -265,7 +274,8 @@ ul {
       </div>
  
  <div class="item">
-        <img src="Dwarka.jpg" alt="Dwarka" width="2000px" height="600px">
+  <a href="../cards/dhwarka.html  " target="_blank">
+        <img src="E:\project\images\Dwarka.jpg" alt="Dwarka" width="2000px" height="600px"></a>
         <div class="carousel-caption">
           <h3>Dwarka</h3>
  <p>Dwarka</p>
@@ -324,54 +334,54 @@ border: 1px solid black;
 padding: 50px;
 margin: 20px;" >
 <div style="display: inline-block; padding-left: 8%;padding-right: 5%;">
-  <a href="sun-temple.html">
+  <a href="E:\project\cards\sun-temple.html">
   <div class="card" style="margin:20px; margin-top: -1px ; display: inline-block;">
-      <img src="Sun.jpg" alt="Sun Temple" onclick style="width:100%">
+      <img src="E:\project\images\Sun.jpg" alt="Sun Temple" onclick style="width:100%">
       <div class="container">
         <h4><b>Sun Temple</b></h4> 
         <p>Modhera</p> 
       </div>
     </div>
     </a>
-    <a href="ranikivav.html">
+    <a href="E:\project\cards\ranikivav.html">
     <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
-        <img src="Rani.jpg" alt="Sun Temple" style="width:100%">
+        <img src="E:\project\images\Rani.jpg" alt="Sun Temple" style="width:100%">
         <div class="container">
           <h4><b>Rani ki vav</b></h4> 
           <p>Patan</p> 
         </div>
       </div>
       </a>
-    <a href="gir.html">
+    <a href="E:\project\cards\gir.html">
       <div class="card" style="margin: 20px; margin-top: -1px ;  display: inline-block;">
-        <img src="Gir.jpg" alt="Gir" style="width:100%">
+        <img src="E:\project\images\Gir.jpg" alt="Gir" style="width:100%">
         <div class="container">
           <h4><b>Sasan Gir</b></h4> 
           <p>gir</p> 
         </div>
       </div>
       </a>
-      <a href="mahatmamandir.html">
+      <a href="E:\project\cards\mahatmamandir.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
-        <img src="mahatma mandir.jpg" alt="Mahatma mandir" style="width:100%">
+        <img src="E:\project\images\mahatma mandir.jpg" alt="Mahatma mandir" style="width:100%">
         <div class="container">
           <h4><b>Mahatma Mandir</b></h4> 
           <p>Gandhinagar</p> 
         </div>
       </div>
       </a>
-      <a href="shivrajpur.html">
+      <a href="E:\project\cards\shivrajpur.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
-        <img src="shivrajpur.jpg" alt="shivrajpur" style="width:100%">
+        <img src="E:\project\images\shivrajpur.jpg" alt="shivrajpur" style="width:100%">
         <div class="container">
           <h4><b>Shivrajpur Beach</b></h4> 
           <p>Shivrajpur Beach</p> 
         </div>
       </div>
     </a>
-    <a href="div.html">
+    <a href="E:\project\cards\div.html">
       <div class="card" style="margin: 20px; margin-top: -1px ; display: inline-block;">
-        <img src="Diu .jpg" alt="Diu" style="width:100%">
+        <img src="E:\project\images\Diu .jpg" alt="Diu" style="width:100%">
         <div class="container">
           <h4><b>Diu</b></h4> 
           <p>Diu</p> 
@@ -389,20 +399,20 @@ margin: 20px;" >
               <h3>Contact us:+91 84 60973837</h3>
       <h3>Email : gujaratexplorer518@gmail.com</h3>
             <a href="https://www.facebook.com/">
-             <img src="fa.png"alt="" />
+             <img src="E:\project\images\fa.png"alt="" />
              </a>
              <a href="https://www.twitter.com/">
-                <img src="twitter.png" alt="" />
+                <img src="E:\project\images\twitter.png" alt="" />
                 </a>
                 <a href="https://www.instagram.com/">
-      <img src="insta.png" alt=""/>
+      <img src="E:\project\images\insta.png" alt=""/>
       </a>
               <div class="app-logo">
                 
               </div>
             </div>
             <div class="footer-col-2" >
-              <img src="gujaratexp.png" alt=""/>
+              <img src="E:\project\images\gujaratexp.png" alt=""/>
             </div>
             <br><br><br><br><br><br><br>
          <p class="copyright">Copyright &copy; Gujarat Explorer</p>
